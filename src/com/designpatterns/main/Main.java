@@ -1,7 +1,6 @@
 package com.designpatterns.main;
 /**
  * @author Chris Conlon
- * 
  * @author Nana Ahiabli
  * @author John Liu
  * @author Trey DeWald
