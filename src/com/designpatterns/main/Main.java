@@ -1,4 +1,4 @@
-package com.designpatterns.boot;
+package com.designpatterns.main;
 /**
  * @author Chris Conlon
  * 
@@ -6,7 +6,7 @@ package com.designpatterns.boot;
  * @author John Liu
  * @author Trey DeWald
  */
-public class Boot{
+public class Main{
     public static void main(String[] args){
         System.out.println("Hello World.");
     }
