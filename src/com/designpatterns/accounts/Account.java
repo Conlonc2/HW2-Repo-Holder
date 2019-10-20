@@ -57,4 +57,9 @@ public abstract class Account {
     public void setNextChain(Account account){
         this.next = account;
     }
+
+    public String toString(){
+        String toReturn = this.identity.toString() + "\n" + "Total: " + this.total + "\nNext Account: " + this.next;
+        return toReturn;
+    }
 }
