@@ -57,10 +57,10 @@ public abstract class Account {
         this.next = account;
     }
 
-    // public String toString(){
-    //     String toReturn = this.identity.toString() + "\n" + "Total: " + this.total + "\nNext Account: " + this.next;
-    //     return toReturn;
-    // }
+    public String toString(){
+        String toReturn = this.identity.toString() + "\n" + "Total: " + this.total + "\nNext Account: " + this.next;
+        return toReturn;
+    }
         public Account getNext(){
             return this.next;
     }
