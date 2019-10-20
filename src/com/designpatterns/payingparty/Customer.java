@@ -16,7 +16,6 @@ public class Customer implements PayingParty{
      * @param amount
      * @param checkProcessor
      */
-    private Led led;
     private BankAccount checking;
     public CheckProcessor checkProcessor = new CheckProcessor();
 
