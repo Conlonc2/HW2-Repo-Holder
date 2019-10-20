@@ -1,6 +1,8 @@
 package com.designpatterns.payingparty;
+
 import com.designpatterns.sensors.Led;
 import com.designpatterns.accounts.Account;
+import com.designpatterns.accounts.BankAccount;
 import com.designpatterns.accounts.CheckProcessor;
 
 
@@ -16,8 +18,7 @@ public class Customer implements PayingParty{
      */
     private Led led;
     private BankAccount checking;
-    private double amount;
-    public CheckProcessor checkProcessor;
+    public CheckProcessor checkProcessor = new CheckProcessor();
 
     public Customer(BankAccount checking){
        this.checking = checking;
@@ -26,8 +27,17 @@ public class Customer implements PayingParty{
      * 
      * @return
      */
-    public Account addAccount(){
+    public void addAccount(Account acc){
 
+        if (checking.getNext() == null){
+            this.checking.setNextChain(acc);
+            return;
+        }
+        Account current = checking;
+        while (current.getNext() != null){
+            current = current.getNext();
+        }
+        current.setNextChain(acc);
     }
 
     /**
@@ -36,8 +46,7 @@ public class Customer implements PayingParty{
      * @return
      */
     public double pay(double amount){
-        this.amount = amount;
-        checkProcessor.processCheck(checking, amount);
+        this.checkProcessor.processCheck(checking, amount);
         return amount;
     }
 }

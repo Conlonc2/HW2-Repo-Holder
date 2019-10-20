@@ -5,7 +5,7 @@ import com.designpatterns.payingparty.Vendor;
 
 public class CheckProcessor{
 
-    public static void processCheck(BankAccount acc, double amt){
+    public void processCheck(BankAccount acc, double amt){
         try{
             acc.validateFunds(amt);
             new Vendor().pay(amt);
