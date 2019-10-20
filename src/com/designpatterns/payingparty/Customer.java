@@ -10,9 +10,7 @@ public class Customer implements PayingParty{
 
     /**
      * 
-     * @param led
      * @param BankAccount 
-     * @param amount
      * @param checkProcessor
      */
     private BankAccount checking;
