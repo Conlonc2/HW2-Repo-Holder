@@ -23,7 +23,10 @@ public class Main {
 		cust1.addAccount(new BankAccount("savings", 50));
 		cust1.addAccount(new CreditAccount("c1", 50));
 		cust1.addAccount(new CreditAccount("c2", 50));
-		cust1.pay(350);
+		cust1.addAccount(new CreditAccount("c3", 50));
+		cust1.pay(150);
+		cust1.pay(220);
+		cust1.pay(5000);
 	}
 
 }
