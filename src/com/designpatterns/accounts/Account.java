@@ -38,7 +38,6 @@ public abstract class Account {
      */
     public void validateFunds(double remainder) throws InsufficentFundsException {
         double test =  this.total - remainder;
-        System.out.println(test);
         if(test >= 0.0){
             deduct(remainder);
         }
@@ -61,5 +60,9 @@ public abstract class Account {
     public String toString(){
         String toReturn = this.identity.toString() + "\n" + "Total: " + this.total + "\nNext Account: " + this.next;
         return toReturn;
+    }
+
+    public Account getNext(){
+        return this.next;
     }
 }
