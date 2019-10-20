@@ -1,6 +1,5 @@
 package com.designpatterns.payingparty;
 
-import com.designpatterns.sensors.Led;
 import com.designpatterns.accounts.Account;
 import com.designpatterns.accounts.BankAccount;
 import com.designpatterns.accounts.CheckProcessor;
