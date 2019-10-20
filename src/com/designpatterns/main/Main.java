@@ -1,6 +1,5 @@
 package com.designpatterns.main;
 
-import com.designpatterns.sensors.*;
 import com.designpatterns.accounts.*;
 /**
  * @author Chris Conlon
