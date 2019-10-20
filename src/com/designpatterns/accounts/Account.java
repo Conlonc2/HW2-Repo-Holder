@@ -38,7 +38,6 @@ public abstract class Account {
      */
     public void validateFunds(double remainder) throws InsufficentFundsException {
         double test =  this.total - remainder;
-        System.out.println(test);
         if(test >= 0.0){
             deduct(remainder);
         }
