@@ -61,4 +61,8 @@ public abstract class Account {
         String toReturn = this.identity.toString() + "\n" + "Total: " + this.total + "\nNext Account: " + this.next;
         return toReturn;
     }
+
+    public Account getNext(){
+        return this.next;
+    }
 }
