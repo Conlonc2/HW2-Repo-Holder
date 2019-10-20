@@ -14,4 +14,7 @@ public class Customer implements PayingParty{
 
     }
 
+    public void pay(double amount){
+        
+    }
 }
