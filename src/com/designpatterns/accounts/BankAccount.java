@@ -11,4 +11,8 @@ public class BankAccount extends Account {
     public void deduct(double amount){
         super.total -= amount;
     }
+
+    public void makeDeposit(double amount){
+        super.total += amount;
+    }
 }
